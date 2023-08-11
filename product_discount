@@ -7,52 +7,52 @@ class Main {
 Scanner scan = new Scanner (System.in);
 
 
-  System.out.println("Insira o valor do produto:\n ");
-  double produto = scan.nextDouble();
+  System.out.println("Insert the product price:\n ");
+  double product = scan.nextDouble();
 
-  System.out.println("Insira o código de desconto do produto:\n");
-  int codigo = scan.nextInt();
+  System.out.println("Insert the discount code of the product:\n");
+  int code = scan.nextInt();
 
 
-  double resultado;
-  switch(codigo){
+  double result;
+  switch(code){
 
     case 1:
       
-      if(produto>30.0){
-       resultado =  produto * 0.7;
-       System.out.println("O novo valor é: "+ resultado);
+      if(product>30.0){
+       result =  product * 0.7;
+       System.out.println("The new price is: "+ resultado);
       }
       else{
-        resultado = produto;
+        result = product;
       }
       
       break;
 
       
     case 2:
-      resultado = produto * 0.8;
-      System.out.println("O novo valor é: "+ resultado);
+      result = product * 0.8;
+      System.out.println("The new price is: "+ result);
       
       break;
 
       
     case 3:
       
-      if(produto>100.0){
-        resultado = produto * 0.9;
-      System.out.println("O novo valor é: "+ resultado);
+      if(product>100.0){
+        result = product * 0.9;
+      System.out.println("The new price is: "+ resultado);
       }
       else{
-        resultado = produto * 0.95;
-        System.out.println("O novo valor é: "+ resultado);
+        result = product * 0.95;
+        System.out.println("The new value is: "+ result);
       }
       
       break;
 
       
       default:
-        System.out.println("Favor digitar um código de desconto válido.");
+        System.out.println("Please type a valid discount code.");
       
       break;
       }
