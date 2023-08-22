@@ -21,7 +21,7 @@ Scanner scan = new Scanner (System.in);
       
       if(product>30.0){
        result =  product * 0.7;
-       System.out.println("The new price is: "+ resultado);
+       System.out.println("The new price is: "+ result);
       }
       else{
         result = product;
@@ -41,7 +41,7 @@ Scanner scan = new Scanner (System.in);
       
       if(product>100.0){
         result = product * 0.9;
-      System.out.println("The new price is: "+ resultado);
+      System.out.println("The new price is: "+ result);
       }
       else{
         result = product * 0.95;
